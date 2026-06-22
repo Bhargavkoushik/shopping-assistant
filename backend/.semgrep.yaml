@@ -1,0 +1,7 @@
+rules:
+  - id: detect-google-api-key
+    patterns:
+      - pattern-regex: 'AIzaSy[A-Za-z0-9_\-]*'
+    message: "Potential hardcoded Google API key detected."
+    languages: [python]
+    severity: ERROR
